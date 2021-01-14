@@ -51,7 +51,7 @@
             echo '<td align="right">'.$row['平均單位裝置容量每日發電量'].'</td>';
             echo '</tr>';
         }
-        echo '</table';
+        echo '</table>';
     }
     $connect->close();
 ?>

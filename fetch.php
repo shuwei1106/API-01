@@ -1,7 +1,7 @@
 <?php
-    include 'database.php';
+    include 'database_w.php';
 
-    $fetchSql = "SELECT * FROM 太陽光電發電量";  
+    $fetchSql = "SELECT * FROM 太陽光電發電量s";  
     
     $status = $connect->query($fetchSql);
 
@@ -30,7 +30,7 @@
         echo '<td align="right">'.$row['平均單位裝置容量每日發電量'].'</td>';
         echo '</tr>';
     }
-    echo '</table';
+    echo '</table>';
 
     $connect->close();
 ?>
